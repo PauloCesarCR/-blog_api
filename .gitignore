@@ -1,0 +1,41 @@
+# arquivos temporários
+*.swp
+*~
+*.bak
+*.cache
+
+# logs e arquivos de debug
+log/
+logs/
+debug.log
+
+# arquivos de build e dependências
+/bin/
+/obj/
+/node_modules/
+/packages/
+*.dll
+*.exe
+*.pdb
+*.user
+*.bak
+*.cache
+
+# arquivos de configuração local
+*.config
+*.csproj.user
+*.sln.docstates
+*.userprefs
+
+# arquivos sensíveis ou dados privados
+.env
+.env.*
+config.*
+*.key
+*.pfx
+
+# diretórios de sistema
+Thumbs.db
+.DS_Store
+ehthumbs.db
+$RECYCLE.BIN/
