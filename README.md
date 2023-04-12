@@ -1,1 +1,1 @@
-# -blog_api.github.io
+# -blog_api
