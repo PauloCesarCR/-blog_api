@@ -1,4 +1,4 @@
 [build]
   command = "dotnet build --configuration $NETLIFY_DEV"
-  publish = "BlogApi/bin/Release/net6.0/publish" # Caminho para a pasta de publicação do projeto
-  functions = "BlogApi/bin/Release/net6.0/publish" # Caminho para a pasta de publicação do projeto
+  publish = "BlogApi/bin/Release/net6.0" # Caminho para a pasta de publicação do projeto
+  functions = "BlogApi/bin/Release/net6.0" # Caminho para a pasta de publicação do projeto
