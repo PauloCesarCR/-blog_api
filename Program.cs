@@ -3,14 +3,23 @@ using Api_blog.Repositório;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using DotNetEnv;
+using System.Reflection.Metadata;
+using Npgsql;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Load DotEnv
+DotNetEnv.Env.Load();
+
 // Add services to the container.
+
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<BloggingContext>(
-        o => o.UseNpgsql(builder.Configuration.GetConnectionString("BloggingContext")));
+        o => o.UseNpgsql());
 
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
 
